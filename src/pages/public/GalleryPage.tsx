@@ -8,32 +8,32 @@ const GalleryPage: React.FC = () => {
 
   const galleryItems = [
     {
-      id: 1,
-      image: 'https://images.pexels.com/photos/8199133/pexels-photo-8199133.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 9,
+      image: '/formasi.jpg',
       title: 'Latihan Formasi',
       category: 'training',
       year: '2024',
-      description: 'Latihan formasi rutin anggota PASRUNA'
+      description: 'Latihan formasi untuk upacara hari pendidikan nasional'
     },
     {
-      id: 2,
-      image: 'https://images.pexels.com/photos/8923671/pexels-photo-8923671.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 8,
+      image: '/upacara.jpg',
       title: 'Upacara Bendera',
       category: 'ceremony',
       year: '2024',
       description: 'Petugas upacara bendera hari Senin'
     },
     {
-      id: 3,
-      image: 'https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 7,
+      image: '/lomba.jpg',
       title: 'Lomba Paskibra',
       category: 'competition',
       year: '2024',
       description: 'Kompetisi paskibra tingkat kota'
     },
     {
-      id: 4,
-      image: 'https://images.pexels.com/photos/3184336/pexels-photo-3184336.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 6,
+      image: '/pembinaan.jpg',
       title: 'Pembinaan Karakter',
       category: 'training',
       year: '2024',
@@ -41,39 +41,39 @@ const GalleryPage: React.FC = () => {
     },
     {
       id: 5,
-      image: 'https://images.pexels.com/photos/5427674/pexels-photo-5427674.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Kegiatan Outdoor',
-      category: 'outdoor',
+      image: 'pendidikan.jpg',
+      title: 'Pendidikan dan Pelatihan',
+      category: 'Diklat',
       year: '2024',
-      description: 'Kegiatan outdoor training'
+      description: 'Pendidikan dan pelatihan anggota baru di Trawas'
     },
     {
-      id: 6,
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 4,
+      image: 'baru.jpg',
       title: 'Penerimaan Anggota Baru',
       category: 'ceremony',
       year: '2024',
       description: 'Upacara penerimaan anggota baru PASRUNA'
     },
     {
-      id: 7,
-      image: 'https://images.pexels.com/photos/8923664/pexels-photo-8923664.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 3,
+      image: 'pemimpin.jpg',
       title: 'Pelatihan Kepemimpinan',
-      category: 'training',
-      year: '2023',
-      description: 'Workshop kepemimpinan untuk anggota'
+      category: 'Diklat',
+      year: '2024',
+      description: 'Workshop kepemimpinan untuk anggota baru'
     },
     {
-      id: 8,
-      image: 'https://images.pexels.com/photos/6238298/pexels-photo-6238298.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 2,
+      image: '/prestasi.jpg',
       title: 'Prestasi Juara',
       category: 'competition',
-      year: '2023',
-      description: 'Meraih juara 1 lomba paskibra regional'
+      year: '2024',
+      description: 'Meraih juara 3 purwa LKBB COPA'
     },
     {
-      id: 9,
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
+      id: 1,
+      image: 'baksos.jpg',
       title: 'Bakti Sosial',
       category: 'social',
       year: '2023',
@@ -86,7 +86,7 @@ const GalleryPage: React.FC = () => {
     { id: 'training', name: 'Latihan', icon: Users },
     { id: 'ceremony', name: 'Upacara', icon: Award },
     { id: 'competition', name: 'Kompetisi', icon: Trophy },
-    { id: 'outdoor', name: 'Outdoor', icon: Calendar },
+    { id: 'Diklat', name: 'Diklat', icon: Calendar },
     { id: 'social', name: 'Sosial', icon: Users }
   ];
 
