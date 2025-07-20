@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Mail, Phone, Instagram, Facebook, MessageCircle, Send, Clock, User } from 'lucide-react';
+import { MapPin, Mail, Phone, Instagram, MessageCircle, Send, Clock, User } from 'lucide-react';
 import Card from '../../components/UI/Card';
 import Button from '../../components/UI/Button';
 
@@ -20,15 +20,23 @@ const ContactPage: React.FC = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Pesan Anda telah terkirim! Kami akan segera merespons.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
+  e.preventDefault();
+
+  const { name, email, subject, message } = formData;
+
+  const mailtoLink = `mailto:paskibrasmabarunawati@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    `Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`
+  )}`;
+
+  window.location.href = mailtoLink;
+
+  // Reset form (opsional)
+  // setFormData({ name: '', email: '', subject: '', message: '' });
+};
+
 
   const openWhatsApp = () => {
-    const phoneNumber = '6281234567890'; // Ganti dengan nomor WhatsApp yang sebenarnya
+    const phoneNumber = '6282257325228'; // Ganti dengan nomor WhatsApp yang sebenarnya
     const message = 'Halo PASRUNA! Saya ingin bertanya tentang organisasi ini.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -38,25 +46,25 @@ const ContactPage: React.FC = () => {
     {
       icon: MapPin,
       title: 'Alamat',
-      content: 'SMA Barunawati\nJl. Pendidikan No. 123\nJakarta Selatan 12345',
+      content: 'SMA Barunawati\nJl. Perak Bar. No.173, Perak Utara, Kec. Pabean Cantikan\nSurabaya, Jawa Timur 60165',
       color: 'text-blue-500'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'pasruna@smabarunawati.sch.id\ninfo.pasruna@gmail.com',
+      content: 'paskibrasmabarunawati@gmail.com',
       color: 'text-green-500'
     },
     {
       icon: Phone,
       title: 'Telepon',
-      content: '+62 21 1234 5678\n+62 812 3456 7890',
+      content: '+6282257325228',
       color: 'text-purple-500'
     },
     {
       icon: Clock,
       title: 'Jam Operasional',
-      content: 'Senin - Jumat: 07:00 - 16:00\nSabtu: 07:00 - 12:00',
+      content: 'Senin - Jumat: 07:00 - 16:00',
       color: 'text-orange-500'
     }
   ];
@@ -65,16 +73,9 @@ const ContactPage: React.FC = () => {
     {
       icon: Instagram,
       name: 'Instagram',
-      handle: '@pasruna_barunawati',
-      url: 'https://instagram.com/pasruna_barunawati',
+      handle: '@pasruna',
+      url: 'https://instagram.com/pasruna',
       color: 'bg-gradient-to-r from-purple-500 to-pink-500'
-    },
-    {
-      icon: Facebook,
-      name: 'Facebook',
-      handle: 'PASRUNA Barunawati',
-      url: 'https://facebook.com/pasruna.barunawati',
-      color: 'bg-blue-600'
     }
   ];
 

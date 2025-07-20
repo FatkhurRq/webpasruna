@@ -9,19 +9,19 @@ const HomePage: React.FC = () => {
 
   const heroSlides = [
     {
-      image: 'https://images.pexels.com/photos/8199133/pexels-photo-8199133.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: '/awal.jpg',
       title: 'Selamat Datang di PASRUNA',
       subtitle: 'Paskibra SMA Barunawati',
       description: 'Membentuk karakter, mengembangkan kedisiplinan, dan membangun jiwa kepemimpinan'
     },
     {
-      image: 'https://images.pexels.com/photos/8923671/pexels-photo-8923671.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: '/diklat.jpg',
       title: 'Kegiatan Paskibra',
-      subtitle: 'Latihan dan Pembinaan',
+      subtitle: 'Pendidikan dan Pelatihan',
       description: 'Berbagai kegiatan pembinaan karakter dan kedisiplinan untuk siswa'
     },
     {
-      image: 'https://images.pexels.com/photos/6238297/pexels-photo-6238297.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: '/prestasi.jpg',
       title: 'Prestasi Gemilang',
       subtitle: 'Kebanggaan Sekolah',
       description: 'Meraih berbagai prestasi dalam kompetisi paskibra tingkat regional dan nasional'
@@ -31,21 +31,21 @@ const HomePage: React.FC = () => {
   const activities = [
     {
       title: 'Latihan Rutin',
-      description: 'Latihan kedisiplinan dan formasi setiap hari Sabtu',
+      description: 'Latihan kedisiplinan dan formasi setiap hari Senin',
       icon: Calendar,
-      date: '2025-01-11'
+      date: '2025-07-21'
     },
     {
       title: 'Upacara Bendera',
-      description: 'Bertugas sebagai petugas upacara sekolah',
+      description: 'Bertugas sebagai petugas upacara hari kemerdekaan',
       icon: Users,
-      date: '2025-01-13'
+      date: '2025-08-17'
     },
     {
       title: 'Lomba Paskibra',
       description: 'Persiapan lomba paskibra tingkat kota',
       icon: Trophy,
-      date: '2025-01-20'
+      date: '2025-10-11'
     }
   ];
 
@@ -152,7 +152,7 @@ const HomePage: React.FC = () => {
           <Card className="max-w-4xl mx-auto text-center">
             <div className="mb-6">
               <img
-                src="https://images.pexels.com/photos/3184336/pexels-photo-3184336.jpeg?auto=compress&cs=tinysrgb&w=300"
+                src="/ketua.jpg"
                 alt="Ketua PASRUNA"
                 className="w-24 h-24 rounded-full mx-auto object-cover"
               />
@@ -163,7 +163,7 @@ const HomePage: React.FC = () => {
               mengembangkan potensi diri dan berkontribusi positif bagi sekolah dan bangsa."
             </blockquote>
             <div className="text-center">
-              <p className="font-semibold text-neutral-900">Ahmad Rizky Pratama</p>
+              <p className="font-semibold text-neutral-900">Fatkhur Rozaq</p>
               <p className="text-sm text-neutral-600">Ketua PASRUNA 2024/2025</p>
             </div>
           </Card>
@@ -254,7 +254,7 @@ const HomePage: React.FC = () => {
               <Button 
                 variant="secondary" 
                 size="lg" 
-                className="w-full sm:w-auto bg-white text-primary-500 hover:bg-neutral-50"
+                className="w-full sm:w-auto bg-black text-primary-500 hover:bg-neutral-50"
               >
                 Daftar Sekarang
               </Button>

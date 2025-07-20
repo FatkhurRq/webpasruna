@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -35,26 +35,24 @@ const Footer: React.FC = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-primary-400 flex-shrink-0" />
-                <span className="text-neutral-300">SMA Barunawati, Jakarta</span>
+                <span className="text-neutral-300">SMA Barunawati, Jl. Perak Bar. No.173, Perak Utara, Kec. Pabean Cantikan, Surabaya, Jawa Timur 60165</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary-400 flex-shrink-0" />
-                <span className="text-neutral-300">pasruna@smabarunawati.sch.id</span>
+                <span className="text-neutral-300">paskibrasmabarunawati@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary-400 flex-shrink-0" />
-                <span className="text-neutral-300">+62 21 XXXX XXXX</span>
+                <span className="text-neutral-300">+62 822-5732-5228</span>
               </div>
             </div>
 
             {/* Social Media */}
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-neutral-300 hover:text-primary-400 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-neutral-300 hover:text-primary-400 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
+              <div className="flex items-center space-x-2">
+                <Instagram className="h-4 w-4 text-primary-400 flex-shrink-0" />
+                <span className="text-neutral-300">@pasruna</span>
+              </div>
             </div>
           </div>
         </div>

@@ -11,10 +11,9 @@ const AnnouncementsPage: React.FC = () => {
         </div>
         
         <Card>
-          <h2 className="text-2xl font-bold mb-4">Daftar Pengumuman</h2>
+          <h2 className="text-2xl font-bold mb-4">Pendaftaran Anggota Baru Pasruna</h2>
           <p className="text-neutral-600">
-            Halaman ini akan menampilkan daftar pengumuman terbaru dari PASRUNA 
-            untuk anggota dan calon anggota.
+            Untuk pendaftaran anggota baru pasruna, silakan menghubungi admin melalui WhatsApp atau langsun mengikuti latihan yang diadakan setiap hari Senin pukul 15:30 - 17:00 di lapangan SMA Barunawati.
           </p>
         </Card>
       </div>
