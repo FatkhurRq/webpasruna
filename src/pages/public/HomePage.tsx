@@ -175,15 +175,15 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
             <div className="animate-slide-up">
-              <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">120+</div>
+              <div className="text-lg">Alumni</div>
+            </div>
+            <div className="animate-slide-up">
+              <div className="text-4xl md:text-5xl font-bold mb-2">20+</div>
               <div className="text-lg">Anggota Aktif</div>
             </div>
             <div className="animate-slide-up">
-              <div className="text-4xl md:text-5xl font-bold mb-2">15+</div>
-              <div className="text-lg">Prestasi Diraih</div>
-            </div>
-            <div className="animate-slide-up">
-              <div className="text-4xl md:text-5xl font-bold mb-2">10</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">21</div>
               <div className="text-lg">Tahun Berdiri</div>
             </div>
           </div>
